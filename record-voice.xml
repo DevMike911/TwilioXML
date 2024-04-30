@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-    <Say>
-      This call is recording.
-    </Say>
+    <Say>Hello! {CallSid}</Say>
+    <Play>https://ainotetaker.s3.amazonaws.com/uploads/user123/de760cf3-0284-4374-a1ad-aa6765d680da.mp3</Play>
+    <Record timeout="10" maxLength="120" finishOnKey="*" action="?callSid={{CallSid}}" method="POST" />
 </Response>
 
